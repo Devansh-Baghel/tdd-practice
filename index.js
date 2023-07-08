@@ -6,7 +6,21 @@ function reverseString(string) {
   return string.split("").reverse().join("");
 }
 
-// const calculator = {
+const calculator = {
+  add: (a, b) => {
+    return a + b;
+  },
 
-// }
-export { capitalize, reverseString };
+  subtract: (a, b) => {
+    return a - b;
+  },
+
+  multiply: (a, b) => {
+    return a * b;
+  },
+
+  divide: (a, b) => {
+    return a / b;
+  }
+}
+export { capitalize, reverseString , calculator};

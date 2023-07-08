@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { capitalize, reverseString } from "index";
+import { capitalize, reverseString , calculator} from "index";
 
 describe("Capitalize", () => {
   it("returns word with first letter capitalized", () => {
@@ -37,6 +37,8 @@ describe("Reverse String", () => {
   });
 });
 
+const c = calculator;
+
 describe("Calculator", () => {
   it("add", () => {
     expect(c.add(1, 2)).toBe(3);
@@ -51,6 +53,6 @@ describe("Calculator", () => {
   });
 
   it("divide", () => {
-    expect(c.divide(900, 3)).toBe(3);
+    expect(c.divide(900, 300)).toBe(3);
   });
 });
