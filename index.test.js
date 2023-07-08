@@ -39,18 +39,18 @@ describe("Reverse String", () => {
 
 describe("Calculator", () => {
   it("add", () => {
-    expect(reverseString(1, 2)).toBe(3);
+    expect(c.add(1, 2)).toBe(3);
   });
 
   it("subtract", () => {
-    expect(reverseString(50, 40)).toBe(10);
+    expect(c.subtract(50, 40)).toBe(10);
   });
 
   it("multiply", () => {
-    expect(reverseString(3, 300)).toBe(900);
+    expect(c.multiply(3, 300)).toBe(900);
   });
 
   it("divide", () => {
-    expect(reverseString(900, 3)).toBe(3);
+    expect(c.divide(900, 3)).toBe(3);
   });
 });
