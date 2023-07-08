@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {capitalize} from "index";
+import { capitalize, reverseString } from "index";
 
 describe("Capitalize", () => {
   it("returns word with first letter capitalized", () => {
