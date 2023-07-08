@@ -36,3 +36,21 @@ describe("Reverse String", () => {
     expect(reverseString("RACECAR")).toBe("RACECAR");
   });
 });
+
+describe("Calculator", () => {
+  it("add", () => {
+    expect(reverseString(1, 2)).toBe(3);
+  });
+
+  it("subtract", () => {
+    expect(reverseString(50, 40)).toBe(10);
+  });
+
+  it("multiply", () => {
+    expect(reverseString(3, 300)).toBe(900);
+  });
+
+  it("divide", () => {
+    expect(reverseString(900, 3)).toBe(3);
+  });
+});

@@ -6,4 +6,7 @@ function reverseString(string) {
   return string.split("").reverse().join("");
 }
 
+// const calculator = {
+
+// }
 export { capitalize, reverseString };
