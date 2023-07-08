@@ -11,10 +11,28 @@ describe("Capitalize", () => {
   });
 
   it("works with punctuation", () => {
-    expect(capitalize("black")).toBe("Black");
+    expect(capitalize("black.")).toBe("Black.");
   });
 
   it("does not effect already capitalized words", () => {
     expect(capitalize("BlaCk")).toBe("BlaCk");
+  });
+});
+
+describe("Reverse String", () => {
+  it("returns reverse string", () => {
+    expect(reverseString("magic")).toBe("cigam");
+  });
+
+  it("returns multiple words reversed", () => {
+    expect(reverseString("magic kingdom")).toBe("modgnik cigam");
+  });
+
+  it("works with punctuation", () => {
+    expect(reverseString("bla . ck")).toBe("kc . alb");
+  });
+
+  it("does not effect palindromes", () => {
+    expect(reverseString("RACECAR")).toBe("RACECAR");
   });
 });
