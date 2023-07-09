@@ -58,7 +58,7 @@ describe("Calculator", () => {
 });
 
 describe("Caeser Cipher", () => {
-  it("doesn't effect 0 with 0 shift", () => {
+  it("doesn't effect with 0 shift", () => {
     expect(caeserCipher("abc", 0)).toBe("abc");
   });
 
@@ -72,5 +72,9 @@ describe("Caeser Cipher", () => {
 
   it("shifts 7 index", () => {
     expect(caeserCipher("black", 7)).toBe("ishjr");
+  });
+
+  it("doesn't affect punctuation", () => {
+    expect(caeserCipher("th@is i#s a ?tes.t!", 5)).toBe("ym@nx n#x f ?yjx.y!");
   });
 });
