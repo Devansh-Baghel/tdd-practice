@@ -78,3 +78,14 @@ describe("Caeser Cipher", () => {
     expect(caeserCipher("th@is i#s a ?tes.t!", 5)).toBe("ym@nx n#x f ?yjx.y!");
   });
 });
+
+describe("Analyze Array", () => {
+  it("returns avg, min, max and length", () => {
+    expect(caeserCipher([1,8,3,4,2,6])).toBe({
+      average: 4,
+      min: 1,
+      max: 8,
+      length: 6
+    });
+  });
+});
