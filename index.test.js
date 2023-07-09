@@ -69,4 +69,8 @@ describe("Caeser Cipher", () => {
   it("wraps around", () => {
     expect(caeserCipher("qwerty", 3)).toBe("tzhuwb");
   });
+
+  it("shifts 7 index", () => {
+    expect(caeserCipher("black", 7)).toBe("ishjr");
+  });
 });
