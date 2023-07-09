@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { capitalize, reverseString , calculator, caeserCipher} from "index";
+import { capitalize, reverseString , calculator, caeserCipher, analyzeArr} from "index";
 
 describe("Capitalize", () => {
   it("returns word with first letter capitalized", () => {
@@ -81,7 +81,7 @@ describe("Caeser Cipher", () => {
 
 describe("Analyze Array", () => {
   it("returns avg, min, max and length", () => {
-    expect(caeserCipher([1,8,3,4,2,6])).toBe({
+    expect(analyzeArr([1,8,3,4,2,6])).toBe({
       average: 4,
       min: 1,
       max: 8,
