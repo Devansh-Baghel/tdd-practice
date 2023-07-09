@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { capitalize, reverseString , calculator} from "index";
+import { capitalize, reverseString , calculator, caeserCipher} from "index";
 
 describe("Capitalize", () => {
   it("returns word with first letter capitalized", () => {
@@ -54,5 +54,19 @@ describe("Calculator", () => {
 
   it("divide", () => {
     expect(c.divide(900, 300)).toBe(3);
+  });
+});
+
+describe("Caeser Cipher", () => {
+  it("doesn't effect 0 with 0 shift", () => {
+    expect(caeserCipher("abc", 0)).toBe("abc");
+  });
+
+  it("shifts 1 index", () => {
+    expect(caeserCipher("abc", 1)).toBe("bcd");
+  });
+
+  it("wraps around", () => {
+    expect(caeserCipher("qwerty", 3)).toBe("tzhuwb");
   });
 });
