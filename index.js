@@ -40,9 +40,11 @@ function caeserCipher(string, shift) {
     } else {
       const index = alphabet.indexOf(string[i]);
       let newIndex = index + shift;
+
       if (newIndex > 25){
         newIndex = (index + shift) - 26;
       }
+
       result.push(alphabet[newIndex]);
     }
   }
@@ -50,5 +52,17 @@ function caeserCipher(string, shift) {
   return result.join("");
 }
 
+function getAvg(arr){
+  const sum = arr.reduce((accumulator, currentValue) => { return accumulator + currentValue },0);
+  
+  return sum / arr.length;
+}
+
+function analyzeArr(arr) {
+
+  return {
+    average: getAvg(arr)
+  }
+}
 // caeserCipher("yxz", 90)
-export { capitalize, reverseString , calculator, caeserCipher};
+export { capitalize, reverseString , calculator, caeserCipher, analyzeArr};
