@@ -58,10 +58,21 @@ function getAvg(arr){
   return sum / arr.length;
 }
 
+function getMin(arr) {
+  return Math.min(...arr);
+}
+
+function getMax(arr) {
+  return Math.max(...arr);
+}
+
 function analyzeArr(arr) {
 
   return {
-    average: getAvg(arr)
+    average: getAvg(arr),
+    min: getMin(arr),
+    max: getMax(arr),
+    length: arr.length,
   }
 }
 // caeserCipher("yxz", 90)

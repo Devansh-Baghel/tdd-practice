@@ -81,7 +81,7 @@ describe("Caeser Cipher", () => {
 
 describe("Analyze Array", () => {
   it("returns avg, min, max and length", () => {
-    expect(analyzeArr([1,8,3,4,2,6])).toBe({
+    expect(analyzeArr([1,8,3,4,2,6])).toStrictEqual({
       average: 4,
       min: 1,
       max: 8,
